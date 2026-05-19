@@ -1,0 +1,57 @@
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import './globals.css'
+
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: 'Kunwar Ayush Pratap Singh - Full-Stack Developer',
+  description: 'B.Tech IT student at IIIT Una with 8.88 CGPA. Full-stack developer specializing in MERN stack, Next.js, and AI integration. Built healthcare and emergency response systems.',
+  keywords: ['Full-Stack Developer', 'React', 'Next.js', 'Node.js', 'MERN Stack', 'IIIT Una', 'Web Development', 'AI Integration'],
+  authors: [{ name: 'Kunwar Ayush Pratap Singh' }],
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
+  openGraph: {
+    title: 'Kunwar Ayush Pratap Singh - Full-Stack Developer',
+    description: 'B.Tech IT student at IIIT Una. Full-stack developer building impactful healthcare and emergency response systems.',
+    type: 'website',
+    locale: 'en_US',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
+      <head>
+        <meta name="theme-color" content="#0a0a0a" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      </head>
+      <body className="font-sans antialiased">
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  )
+}
