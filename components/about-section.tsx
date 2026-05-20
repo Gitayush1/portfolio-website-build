@@ -56,7 +56,7 @@ export function AboutSection() {
               <div className="font-mono text-xs sm:text-sm space-y-2 text-gray-400">
                 <p><span className="text-cyan-400">const</span> developer = &#123;</p>
                 <p className="pl-4"><span className="text-emerald-400">name</span>: <span className="text-orange-300">"Kunwar Ayush"</span>,</p>
-                <p className="pl-4"><span className="text-emerald-400">focus</span>: <span className="text-orange-300">"Healthcare & SaaS platforms"</span>,</p>
+                <p className="pl-4"><span className="text-emerald-400">focus</span>: <span className="text-orange-300">"Scalable Web & SaaS platforms"</span>,</p>
                 <p className="pl-4"><span className="text-emerald-400">stack</span>: [<span className="text-orange-300">"Next.js"</span>, <span className="text-orange-300">"MERN"</span>, <span className="text-orange-300">"TypeScript"</span>],</p>
                 <p className="pl-4"><span className="text-emerald-400">solvedProblems</span>: <span className="text-purple-400">680</span>,</p>
                 <p className="pl-4"><span className="text-emerald-400">philosophy</span>: <span className="text-orange-300">"Ship fast, scale safely"</span></p>
@@ -94,7 +94,7 @@ export function AboutSection() {
 
             {/* Human-centric narrative */}
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              I'm a full-stack developer who loves bridging the gap between high-performance backends and highly interactive user interfaces. Specializing in Next.js, React, Node.js, and MongoDB/SQL, I build secure, scale-ready healthcare portals, safety platforms, and SaaS products.
+              I'm a full-stack developer who loves bridging the gap between high-performance backends and highly interactive user interfaces. Specializing in Next.js, React, Node.js, and MongoDB/SQL, I build secure, scale-ready web applications, safety platforms, and SaaS products.
             </p>
             
             <p className="text-gray-300 text-lg leading-relaxed mb-8">

@@ -7,7 +7,7 @@ export const resumeData = {
     phone: "+91-8840993536",
     website: "https://github.com/Gitayush1",
     summary:
-      "Full-Stack Developer specializing in Next.js & MERN — I build healthcare and SaaS platforms that ship fast and scale.",
+      "Full-Stack Developer specializing in Next.js & MERN — I build high-performance web applications and SaaS platforms that ship fast and scale.",
     socials: [
       { name: "GitHub", url: "https://github.com/Gitayush1", icon: "github" },
       { name: "LinkedIn", url: "https://www.linkedin.com/in/ayush-singh-9b2aa027b/", icon: "linkedin" },

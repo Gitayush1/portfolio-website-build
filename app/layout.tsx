@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Kunwar Ayush Pratap Singh - Full-Stack Developer',
-  description: 'Full-Stack Developer specializing in Next.js & MERN — I build healthcare and SaaS platforms that ship fast and scale.',
+  description: 'Full-Stack Developer specializing in Next.js & MERN — I build high-performance web applications and SaaS platforms that ship fast and scale.',
   keywords: ['Full-Stack Developer', 'React', 'Next.js', 'Node.js', 'MERN Stack', 'IIIT Una', 'Web Development', 'AI Integration'],
   authors: [{ name: 'Kunwar Ayush Pratap Singh' }],
   icons: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Kunwar Ayush Pratap Singh - Full-Stack Developer',
-    description: 'B.Tech IT student at IIIT Una. Full-stack developer building impactful healthcare and emergency response systems.',
+    description: 'B.Tech IT student at IIIT Una. Full-stack developer building impactful web applications and emergency response systems.',
     type: 'website',
     locale: 'en_US',
   },
