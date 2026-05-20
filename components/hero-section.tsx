@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { resumeData } from "@/lib/resume-data";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
@@ -79,10 +79,10 @@ export function HeroSection() {
         </motion.p>
 
         {/* CTA Buttons */}
-        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12">
+        <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-12">
           <Button
             size="lg"
-            className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold rounded-lg group"
+            className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold rounded-lg group cursor-pointer"
             onClick={() => {
               document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
             }}
@@ -90,6 +90,27 @@ export function HeroSection() {
             Explore My Work
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
+
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:text-emerald-300 font-semibold rounded-lg transition-all cursor-pointer"
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            Let's Work Together
+          </Button>
+
+          <a
+            href="https://drive.google.com/file/d/1CdxHQ9vRk9ev3V5lsCEquHFx__NKK4Hy/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg text-sm font-semibold transition-all h-10 px-6 text-gray-300 hover:text-white hover:bg-slate-800/40 border border-slate-800/60 shadow-xs cursor-pointer"
+          >
+            <Download className="mr-2 h-4 w-4 text-emerald-400 group-hover:text-emerald-300" />
+            Download Resume
+          </a>
         </motion.div>
 
         {/* Social Links */}

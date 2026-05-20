@@ -4,9 +4,11 @@ import { useState } from "react";
 import { SplashScreen } from "@/components/splash-screen";
 import { HeroSection } from "@/components/hero-section";
 import { ImpactHighlights } from "@/components/impact-highlights";
+import { AboutSection } from "@/components/about-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { AchievementsSection } from "@/components/achievements-section";
 import { ProjectsSection } from "@/components/projects-section";
+import { TestimonialsSection } from "@/components/testimonials-section";
 import { SkillsSection } from "@/components/skills-section";
 import { FooterSection } from "@/components/footer-section";
 import { ScrollProgressBar } from "@/components/scroll-progress-bar";
@@ -41,6 +43,9 @@ export default function Home() {
       {/* Impact Highlights */}
       <ImpactHighlights />
 
+      {/* About Section */}
+      <AboutSection />
+
       {/* Experience Timeline */}
       <ExperienceSection />
 
@@ -49,6 +54,9 @@ export default function Home() {
 
       {/* Projects Showcase */}
       <ProjectsSection />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Skills Section */}
       <SkillsSection />

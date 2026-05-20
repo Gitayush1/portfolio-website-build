@@ -27,7 +27,7 @@ export function FooterSection() {
   };
 
   return (
-    <footer className="relative py-20 px-4 sm:px-6 lg:px-8 border-t border-emerald-500/10 overflow-hidden">
+    <footer id="contact" className="relative py-20 px-4 sm:px-6 lg:px-8 border-t border-emerald-500/10 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl" />

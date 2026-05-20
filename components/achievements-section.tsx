@@ -1,19 +1,24 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { resumeData } from "@/lib/resume-data";
 
 function AnimatedCounter({ end, duration = 2 }: { end: string; duration?: number }) {
-  const [count, setCount] = useState("0");
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const [count, setCount] = useState(end);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
+    if (!isInView || hasAnimated) return;
+
     // Match a number (integer or float) at the beginning, followed by any suffix
     const match = end.match(/^([0-9]+(?:\.[0-9]+)?)(.*)$/);
     
     if (!match) {
-      // If it doesn't start with a number (e.g., "Participant"), just display the string
       setCount(end);
+      setHasAnimated(true);
       return;
     }
 
@@ -24,16 +29,19 @@ function AnimatedCounter({ end, duration = 2 }: { end: string; duration?: number
 
     if (isNaN(numEnd)) {
       setCount(end);
+      setHasAnimated(true);
       return;
     }
 
     let current = 0;
     const increment = numEnd / (duration * 60);
+    setCount((isFloat ? "0.00" : "0") + suffix);
 
     const timer = setInterval(() => {
       current += increment;
       if (current >= numEnd) {
         setCount(numEnd.toFixed(decimalPlaces) + suffix);
+        setHasAnimated(true);
         clearInterval(timer);
       } else {
         setCount(current.toFixed(decimalPlaces) + suffix);
@@ -41,9 +49,9 @@ function AnimatedCounter({ end, duration = 2 }: { end: string; duration?: number
     }, 1000 / 60);
 
     return () => clearInterval(timer);
-  }, [end, duration]);
+  }, [isInView, end, duration, hasAnimated]);
 
-  return count;
+  return <span ref={ref}>{count}</span>;
 }
 
 export function AchievementsSection() {

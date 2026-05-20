@@ -8,7 +8,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Kunwar Ayush Pratap Singh - Full-Stack Developer',
-  description: 'B.Tech IT student at IIIT Una with 8.88 CGPA. Full-stack developer specializing in MERN stack, Next.js, and AI integration. Built healthcare and emergency response systems.',
+  description: 'Full-Stack Developer specializing in Next.js & MERN — I build healthcare and SaaS platforms that ship fast and scale.',
   keywords: ['Full-Stack Developer', 'React', 'Next.js', 'Node.js', 'MERN Stack', 'IIIT Una', 'Web Development', 'AI Integration'],
   authors: [{ name: 'Kunwar Ayush Pratap Singh' }],
   icons: {

@@ -6,10 +6,13 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Achievements", href: "#achievements" },
   { name: "Projects", href: "#projects" },
+  { name: "Testimonials", href: "#testimonials" },
   { name: "Skills", href: "#skills" },
+  { name: "Resume", href: "https://drive.google.com/file/d/1CdxHQ9vRk9ev3V5lsCEquHFx__NKK4Hy/view?usp=sharing", external: true },
 ];
 
 export function MobileNav() {
@@ -30,11 +33,13 @@ export function MobileNav() {
               <motion.a
                 key={link.name}
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 onClick={() => setIsOpen(false)}
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.05 }}
-                className="block px-4 py-2 rounded-lg text-emerald-300 hover:bg-emerald-500/20 hover:text-emerald-200 transition-all"
+                className="block px-4 py-2 rounded-lg text-emerald-300 hover:bg-emerald-500/20 hover:text-emerald-200 transition-all cursor-pointer"
               >
                 {link.name}
               </motion.a>

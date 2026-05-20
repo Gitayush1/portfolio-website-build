@@ -7,7 +7,7 @@ export const resumeData = {
     phone: "+91-8840993536",
     website: "https://github.com/Gitayush1",
     summary:
-      "B.Tech Information Technology student at IIIT Una with 8.88 CGPA, specializing in full-stack web development. Experienced in building scalable healthcare and emergency response systems using MERN stack, Next.js, and AI integration. Solved 680+ coding problems and passionate about creating impactful solutions.",
+      "Full-Stack Developer specializing in Next.js & MERN — I build healthcare and SaaS platforms that ship fast and scale.",
     socials: [
       { name: "GitHub", url: "https://github.com/Gitayush1", icon: "github" },
       { name: "LinkedIn", url: "https://www.linkedin.com/in/ayush-singh-9b2aa027b/", icon: "linkedin" },
@@ -51,7 +51,7 @@ export const resumeData = {
     },
     {
       icon: "🎓",
-      count: "8.88",
+      count: "8.97",
       label: "CGPA",
       description: "Current CGPA at Indian Institute of Information Technology, Una",
     },
@@ -171,7 +171,7 @@ export const resumeData = {
       school: "Indian Institute of Information Technology, Una",
       degree: "B.Tech - Information Technology",
       graduationYear: 2027,
-      gpa: "8.88 CGPA",
+      gpa: "8.97 CGPA",
       highlights: [
         "Core Subjects: DSA, Computer Networks, DAA, OOPS, DBMS, OS, COA, Software Engineering",
         "Additional: Information Security, Cryptography, Discrete Mathematics",
